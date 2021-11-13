@@ -1,0 +1,10 @@
+This script is used for fixing the issue after the BIOS logo changed by using ChangeLogoWin tools. This issue will caused the BIOS flash failed or montherboard cannot boot up. 
+
+0. Use the Windows version AptioV->ChangeLogo to change BIOS logo.
+1. Put this modified BIOS file under this folder.
+2. Run the script as below sytax. 
+	./fix_checksum.py --rom <full-path-of-the-rom> --extractor <specified-UEFIExtract>
+3. Please note that, you have to use UEFIExtract which come with the script. This version is customized for calcuate new digest. The version from website doesn't cooperated with this script.
+
+
+UEFIExtract is a tool which folked from LongSoft/UEFITool. Licensed under 'BSD-2-Clause Licesnse'.
